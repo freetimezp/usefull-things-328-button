@@ -2,17 +2,94 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Strong UI</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Project</title>
-    </head>
 
+        <!-- GSAP -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+
+        <!-- Particles -->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2/particles.min.js"></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
     <body>
-        <div class="center">
-            <a href="#"><span></span>Show More</a>
+        <div id="particles-bg" class="hidden"></div>
+
+        <header class="top">
+            <div class="logo"><i class="fa-solid fa-bolt"></i> NEON</div>
+            <nav>
+                <a>Home</a>
+                <a>Studio</a>
+                <a>Contact</a>
+            </nav>
+        </header>
+
+        <main class="grid">
+            <div class="card">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <h3>Theme Shift</h3>
+                <p>Cinematic morph</p>
+                <button data-action="theme">Activate</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-layer-group"></i>
+                <h3>Modal Form</h3>
+                <p>Popup section</p>
+                <button data-action="modal">Open</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h3>FX Burst</h3>
+                <p>Global animation impact</p>
+                <button data-action="fx">Launch</button>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-share-nodes"></i>
+                <h3>Social Flow</h3>
+                <p>Floating icons reveal</p>
+                <button data-action="social">Show</button>
+            </div>
+        </main>
+
+        <div class="modal">
+            <div class="modal-box">
+                <div class="modal-head">
+                    <h2>Contact</h2>
+                    <i class="fa-solid fa-xmark close"></i>
+                </div>
+
+                <input placeholder="Email" />
+                <textarea placeholder="Message"></textarea>
+                <button class="send">Send</button>
+            </div>
         </div>
 
-        <script src="./assets/js/main.js"></script>
+        <footer class="marquee">
+            <div class="marquee-track">
+                <i class="fab fa-x-twitter"> • twitter</i>
+                <i class="fab fa-instagram"> • instagram</i>
+                <i class="fab fa-dribbble"> • dribbble</i>
+                <i class="fab fa-github"> • github</i>
+
+                <i class="fab fa-x-twitter"> • twitter</i>
+                <i class="fab fa-instagram"> • instagram</i>
+                <i class="fab fa-dribbble"> • dribbble</i>
+                <i class="fab fa-github"> • github</i>
+
+                <i class="fab fa-x-twitter"> • twitter</i>
+                <i class="fab fa-instagram"> • instagram</i>
+                <i class="fab fa-dribbble"> • dribbble</i>
+                <i class="fab fa-github"> • github</i>
+            </div>
+        </footer>
+
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
