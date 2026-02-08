@@ -46,7 +46,7 @@ function toggleMarquee() {
     if (marqueeActive) {
         marquee.style.pointerEvents = "auto";
 
-        gsap.set(track, { x: "50%" }); // 🔥 reset position
+        gsap.set(track, { x: "10%" }); // 🔥 reset position
         gsap.to(marquee, { opacity: 1, duration: 0.6 });
 
         marqueeTween = gsap.to(track, {

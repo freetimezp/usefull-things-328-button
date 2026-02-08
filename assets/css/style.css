@@ -19,10 +19,22 @@ a {
 }
 
 body {
+    position: relative;
     background: var(--bg);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     color: white;
     font-family: Inter, system-ui;
-    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(../images/bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    opacity: 0.05;
 }
 
 body.alt {
@@ -52,7 +64,7 @@ body.alt #particles-bg canvas {
 /* HEADER */
 .top {
     position: relative;
-    z-index: 2;
+    z-index: 11;
     display: flex;
     justify-content: space-between;
     padding: 30px 60px;
@@ -78,6 +90,11 @@ body.alt #particles-bg canvas {
 .card h3,
 .card p {
     color: var(--text);
+}
+
+nav a:hover {
+    color: #fff;
+    opacity: 1;
 }
 
 /* GRID */
